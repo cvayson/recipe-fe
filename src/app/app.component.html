@@ -1,0 +1,12 @@
+<main>
+  <header></header>
+  <section class="ingredients">
+    <h3>Enter ingredients:</h3>
+    <textarea [(ngModel)]="ingredients"></textarea>
+    <button (click)="this.getRecipe()">Get recipe</button>
+  </section>
+  <section class="recipe">
+    <h3>Recipe:</h3>
+    <pre>{{this.recipe}}</pre>
+  </section>
+</main>
